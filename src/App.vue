@@ -8,6 +8,9 @@
 </script>
 
 <style lang="scss">
+body {
+  background: black;
+}
 .relative {
   position: relative;
 }

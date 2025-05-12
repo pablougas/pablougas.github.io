@@ -1,10 +1,8 @@
 <template>
-  <v-container class="app" fluid>
-    <AppBanner />
-    <AboutSection />
-    <ProjectsSection />
-    <CompaniesSection />
-  </v-container>
+  <AppBanner />
+  <CompaniesSection />
+  <AboutSection />
+  <ProjectsSection />
 </template>
 
 <script lang="ts" setup>

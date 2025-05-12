@@ -1,11 +1,7 @@
 <template>
-  <v-row class="banner" no-gutters>
-    <v-col class="d-flex justify-center align-end" cols="12" order-sm="2" sm="5">
-      <v-img src="@/assets/ai-pablo.png" />
-    </v-col>
+  <v-row class="banner">
     <v-col
-      class="title d-flex pa-10 flex-column"
-      :class="[{'justify-center': smAndUp}, {'justify-start': xs}]"
+      class="title d-flex pa-10 flex-column justify-center"
       cols="12"
       order-sm="1"
       sm="7"
@@ -23,9 +19,7 @@
 
 <script lang="ts" setup>
   import { onMounted, ref } from 'vue';
-  import { useDisplay } from 'vuetify';
 
-  const { xs, smAndUp } = useDisplay()
   const type = ref<HTMLElement | null>(null);
   const titleList = ['Software Engineer', 'Builder', 'Husband', 'Father'];
 
@@ -76,7 +70,7 @@
 
 <style lang="scss" scoped>
 .banner {
-  height: calc(100vh - 40px);
+  height: 60vh;
   overflow: hidden;
   background-color: black;
 
