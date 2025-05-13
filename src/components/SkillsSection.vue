@@ -1,6 +1,6 @@
 <template>
   <v-row class="mt-15">
-    <v-col cols="12" lg="4" md="5" sm="6">
+    <v-col cols="12" lg="4">
       <v-card class="experience-card" rounded="lg">
         <v-card-text class="pa-10">
           <v-row>
@@ -19,7 +19,7 @@
         </v-card-text>
       </v-card>
     </v-col>
-    <v-col cols="12" lg="8" md="7" sm="6">
+    <v-col cols="12" lg="8">
       <v-row>
         <v-col
           v-for="(tech, index) in techLogos"
