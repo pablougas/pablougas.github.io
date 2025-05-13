@@ -1,0 +1,3 @@
+<template>
+  CONNECT
+</template>
