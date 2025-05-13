@@ -46,8 +46,6 @@
     animation: gradient 15s ease infinite;
     min-height: 80vh;
     width: 100%;
-    position: absolute;
-    left: 0;
 
     .about-title {
       font-size: 30px;
