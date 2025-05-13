@@ -1,4 +1,5 @@
 <template>
+  <MouseTrail />
   <AppBanner />
   <CompaniesSection />
   <AboutSection />

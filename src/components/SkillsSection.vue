@@ -26,8 +26,6 @@
           :key="index"
           class="pb-8 px-4"
           :class="{'pt-8': xs}"
-          cols="6"
-          md="4"
         >
           <v-card
             class="pa-10 d-flex justify-center align-center flex-column"

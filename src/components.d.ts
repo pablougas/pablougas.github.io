@@ -12,6 +12,8 @@ declare module 'vue' {
     AppBanner: typeof import('./components/AppBanner.vue')['default']
     AppFooter: typeof import('./components/AppFooter.vue')['default']
     CompaniesSection: typeof import('./components/CompaniesSection.vue')['default']
+    MouseTrail: typeof import('./components/MouseTrail.vue')['default']
+    MyAvatar: typeof import('./components/MyAvatar.vue')['default']
     NavigationDrawer: typeof import('./components/NavigationDrawer.vue')['default']
     ProjectsSection: typeof import('./components/ProjectsSection.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']

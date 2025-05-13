@@ -21,19 +21,13 @@
 
     <v-list density="compact" nav>
       <v-list-item
-        prepend-icon="mdi-home"
-        title="Home"
-        :to="{ path: '/' }"
-      />
-      <v-list-item
-        prepend-icon="mdi-account-circle"
-        title="About Me"
-        :to="{ path: 'about' }"
-      />
-      <v-list-item
-        prepend-icon="mdi-folder-heart-outline"
-        title="Projects"
-        value="users"
+        v-for="link in links"
+        :key="link.title"
+        active-color="#90ee90"
+        class="link"
+        :prepend-icon="link.icon"
+        :title="link.title"
+        :to="{ path: link.to }"
       />
     </v-list>
   </v-navigation-drawer>
@@ -45,4 +39,41 @@
 
   const { smAndDown, mdAndUp } = useDisplay()
   const drawer = ref(mdAndUp)
+
+  const links = [
+    { icon: 'mdi-home',
+      title: 'Home',
+      to: '/',
+    }
+    ,
+    { icon: 'mdi-account-circle',
+      title: 'About',
+      to: 'about',
+    },
+    {
+      icon: 'mdi-folder-heart-outline',
+      title: 'Projects',
+      to: 'projects',
+    },
+    { icon: 'mdi-database-outline',
+      title: 'Stack',
+      to: 'stack',
+    },
+    { icon: 'mdi-newspaper-variant-outline',
+      title: 'Posts',
+      to: 'posts',
+    },
+    { icon:'mdi-link-box-outline',
+      title:'Connect',
+      to:'connect',
+    },
+  ]
 </script>
+
+<style lang="scss" scoped>
+.link {
+  &:hover {
+    color: lightgreen;
+  }
+}
+</style>

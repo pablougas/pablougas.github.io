@@ -39,7 +39,7 @@
 
 <style lang="scss" scoped>
 .carousel-wrapper {
-  height: 240px;
+  height: 220px;
   overflow: hidden;
   position: relative;
   mask-image: linear-gradient(

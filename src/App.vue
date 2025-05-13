@@ -8,8 +8,14 @@
 </script>
 
 <style lang="scss">
+html {
+  scroll-behavior: smooth;
+}
 body {
   background: black;
+  max-width: 100vw;
+  overflow-x: hidden;
+  position: relative;
 }
 .relative {
   position: relative;
