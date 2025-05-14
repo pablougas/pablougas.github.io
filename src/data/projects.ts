@@ -1,7 +1,7 @@
 export default [
   {
     name: 'Mouse Trails',
-    stack: 'Canvas, CSS, JS',
+    stack: 'Canvas, CSS, JS/TS',
     shortSummary: 'Use canvas to create a mouse tail',
     thumbnail: new URL(
       '/src/assets/projects/mouse-trail/mouse-trail.gif',
