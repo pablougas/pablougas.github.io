@@ -43,7 +43,7 @@ export default [
   },
   {
     id: 'infinitecarousel',
-    name: 'Infinite Carousel',
+    name: 'CSS Only Carousel',
     stack: 'HTML/CSS',
     shortSummary: 'Infinite Carousel using only CSS',
     thumbnail: new URL(
@@ -51,18 +51,19 @@ export default [
       import.meta.url
     ).href,
     description: `
-      This is a responsive, animated logo carousel designed using CSS-only techniques, with enhancements
-      powered by JavaScript for interactivity. The original version runs entirely on CSS animations, offering
-      a lightweight, performant solution ideal for static showcases or passive branding. CSS-only carousels
-      are excellent for speed and simplicity, especially when scripting isn’t required or needs to be minimized
-      for performance or accessibility reasons.
+      This is a responsive, animated logo carousel originally built using pure CSS techniques,
+      with optional JavaScript enhancements for interactivity. The CSS-only implementation offers
+      a lightweight, performant solution ideal for passive branding or static showcases. It's
+      especially valuable in environments where scripting must be minimized for performance or
+      accessibility reasons.
       <br><br>
-      However, I took it a step further by introducing JavaScript-driven features — a pause/play toggle,
-      speed adjustment, category filtering, and clickable logos. These additions make the component more interactive,
-      user-driven, and suitable for dynamic content, which improves engagement and accessibility.
+      One key lesson I learned during my time at Getty/iStock was the critical importance of optimization
+      in large-scale applications. At that scale, we couldn’t afford even minimal latency — every millisecond
+      counted. We rigorously tested our code to ensure it didn’t impact search performance, often leveraging
+      practices like lazy loading or CSS-first solutions like this one.
       <br><br>
-      Building a carousel this way strikes a balance between performance and functionality: start with a robust
-      CSS foundation, and enhance it progressively with JavaScript only where it adds clear value.
+      This kind of carousel showcases the best of progressive enhancement: start with a solid, efficient CSS
+      foundation, and introduce JavaScript only where it clearly adds value.
     `,
     component: EditableCarousel,
   },
