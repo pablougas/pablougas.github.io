@@ -1,5 +1,6 @@
 <template>
   <v-container class="pa-10">
+    <v-breadcrumbs divider="." :items="items" />
     <v-row class="text-h3 text-mono mt-10">Projects</v-row>
     <v-row class="mt-15">
       <v-col
@@ -9,7 +10,12 @@
         md="4"
         sm="6"
       >
-        <v-card class="mx-auto" rounded="lg" style="background: rgba(255, 255, 255, 0.15);">
+        <v-card
+          class="mx-auto"
+          rounded="lg"
+          style="background: rgba(255, 255, 255, 0.15);"
+          :to="{ path: 'project', query: { id: project.id } }"
+        >
           <v-img cover height="160px" :src="project.thumbnail" />
           <v-card-text class="d-flex flex-column ga-4 pt-5">
             <div class="d-flex align-center justify-space-between">
@@ -20,7 +26,7 @@
             </div>
             <div>
               <h4 class="mt-3 text-caption text-uppercase font-weight-medium">Project Summary</h4>
-              <p class="text-body-1">{{ project.shortSummary }}</p>
+              <p class="text-body-1 text-truncate">{{ project.shortSummary }}</p>
             </div>
           </v-card-text>
         </v-card>
@@ -31,4 +37,12 @@
 
 <script setup lang="ts">
   import projects from '@/data/projects';
+
+  const items = [
+    {
+      title: 'Home',
+      disabled: false,
+      href: '/',
+    },
+  ]
 </script>

@@ -23,8 +23,8 @@
       <v-list-item
         v-for="link in links"
         :key="link.title"
-        active-color="#90ee90"
         class="link"
+        color="#90ee90"
         :prepend-icon="link.icon"
         :title="link.title"
         :to="{ path: link.to }"
