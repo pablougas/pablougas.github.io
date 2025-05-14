@@ -1,4 +1,4 @@
-import{V as o,a as t}from"./VRow-BN4r-fJm.js";import{k as a,l as i,z as s,n as e,f as r,q as n}from"./index-55cSo-MU.js";import"./dimensions-BvCCzxjr.js";const l="Hello",c=`
+import{V as o,a as t}from"./VRow-8i2QeJ6Q.js";import{k as a,l as i,z as s,n as e,f as r,q as n}from"./index-BIVwWtTw.js";import"./dimensions-DZP26c0i.js";const l="Hello",c=`
   Based in Seattle, Washington, I’m a naturally curious and playful person who is always looking for ways to learn and grow.
   Whether it’s exploring new technologies, diving into complex problems, or expanding my knowledge in unexpected areas,
   I find joy in the process of discovery.
