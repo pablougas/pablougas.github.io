@@ -4,7 +4,7 @@ export default [
     logo: new URL('/src/assets/companies/getty-logo.png', import.meta.url).href,
     stack: 'Angular, Ruby on Rails',
     shortSummary: 'Add User Boards and Collaboration',
-    thumbnail: new URL('/src/assets/getty/save-modal.png', import.meta.url)
+    thumbnail: new URL('/src/assets/getty/card-hover-example.png', import.meta.url)
       .href,
   },
   {

@@ -20,7 +20,7 @@
               <v-img max-width="18%" :src="work.logo" />
             </div>
             <div>
-              <h4 class="mt-3 text-caption text-uppercase font-weight-medium">Project Summary</h4>
+              <h4 class="mt-3 text-caption text-uppercase font-weight-medium">Summary</h4>
               <p class="text-body-1">{{ work.shortSummary }}</p>
             </div>
           </v-card-text>
